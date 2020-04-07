@@ -24,19 +24,13 @@
 			font-family: Arial, Helvetica;
 			font-weight: 200;
 			}
-			.form-group { 
-				padding-left:35px;
-				padding-right:35px;
-				padding-top:32px;
-		
-			}
 			
 			.frostedGlass{
 			position: relative;
 			width: 250px;
 			height: 350px;
 			top: 50px;
-			left: 40%;
+			left: 42%;
 			background: inherit;
 			border-radius: 2px;
 			overflow: hidden;
@@ -59,65 +53,52 @@
 			margin-top: 50px;
 			text-align: center;
 			z-index: 1;
-			}
+            }
 
-			.collapsableFrost{
-			position: relative;
-			width: 400px;
-			height: 1200px;
-			top: 0px;
-			left: 0%;
-			background: inherit;
-			border-radius: 2px;
-			overflow: hidden;
-			
-			}
-			#educationshadow:after{
-			content: '';
-			width: 550px;
-			height: 300px;
-			background: inherit; 
-			position: absolute;
-			right: 0;
-			top: -25px;  
-			bottom: 0;
-			box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.267);
-			filter: blur(50px);
-			}
-			#projectshadow:after{
-			content: '';
-			width: 550px;
-			height: 1000px;
-			background: inherit; 
-			position: absolute;
-			right: 0;
-			top: -25px;  
-			bottom: 0;
-			box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.267);
-			filter: blur(50px);
-			}
-			#experienceshadow:after{
-			content: '';
-			width: 550px;
-			height: 750px;
-			background: inherit; 
-			position: absolute;
-			right: 0;
-			top: -25px;  
-			bottom: 0;
-			box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.267);
-			filter: blur(50px);
-			}
-			.bio{
-			position: relative;
-			margin-top: 50px;
-			text-align: center;
-			z-index: 1;
-			}
 			.bio > *{
 			display: inline-block;
 			width: 200px;
 			}
+            
+            .subfrost{
+            position: relative;
+			width: 100%;
+			height: auto;
+			top: 40px;
+			background: inherit;
+			border-radius: 2px;
+			overflow: hidden;
+            }
+
+            .subfrost::after{
+            content: '';
+			width: 1500px;
+			height: auto;
+			background: inherit; 
+			position: absolute;
+            left:12%;
+			top: -25px;  
+			bottom: 0;
+			box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+			filter: blur(55px);
+            }
+
+            #mainrow{
+                position:relative;
+                left:12%;
+                z-index: 1;
+            }
+            
+            #sectproject{
+                position: relative;
+                right:15px;
+
+            }
+            #sectexperience{
+                position: relative;
+                right:75px;
+            }
+
 			.ucsd{
 				position: relative;
 				text-align: left;
@@ -155,12 +136,13 @@
 				display:inline-block;
 				width: 200px
 			}
-			.projectText{
-				font-size:13px;
+			.headText{
+                font-size:14px;
+                font-weight: bold;
+                text-decoration: underline;
 			}
-			.projectText1{
-				font-size:13px;
-				padding-left: 10px;
+			.subText{
+                font-size:13px;
 			}
 			#BC19Avatar{
 				width: 100px;
@@ -168,7 +150,8 @@
 				position: relative;
 				border-radius: 50%;
 				background-size: contain;
-				background-image: url("https://battlecode.org/battlecode.png");
+                background-image: url("https://i.ibb.co/KrkcXmg/bg.png");
+                background-repeat: repeat-y;
 			}
 			
 			#FTPAvatar{
@@ -177,7 +160,7 @@
 				position: relative;
 				border-radius: 50%;
 				background-size: contain;
-				background-image: url("https://is5-ssl.mzstatic.com/image/thumb/Purple125/v4/b5/34/7f/b5347f78-85e5-fefe-253c-b0ded326bb76/Icon.png/1200x630bb.png");
+                background-image: url("https://www.netmaps.net/wp-content/uploads/2015/03/Milwaukee-map-1200x900.jpg");
 			}
 			
 			#ASAvatar{
@@ -185,8 +168,8 @@
 				height: 100px;
 				position: relative;
 				border-radius: 50%;
-				background-size: contain;
-				background-image: url("https://www.sketchappsources.com/resources/source-image/activity-monitor-jardson-almeida.jpg");
+                background-size: contain;
+				background-image: url("https://d33wubrfki0l68.cloudfront.net/9e87bfbc3b06a4d93946d07d36b2f44b7af6acac/27c01/img/portfolio/2020/fermi-paradox/fermi_paradox_feature.png");
 			}
 			
 			#FMPAvatar{
@@ -195,8 +178,17 @@
 				position: relative;
 				border-radius: 50%;
 				background-size: contain;
-				background-image: url("https://previews.123rf.com/images/bigbaraboom/bigbaraboom1706/bigbaraboom170600045/80192243-black-shape-of-kitten-with-ball-in-paws-cat-logo-simple-animal-logotype-for-shop-and-vet-clinic-or-h.jpg");
-			}
+				background-image: url("https://c.stocksy.com/a/Tq2700/z9/1679237.jpg");
+            }
+            
+            #GothelloAvatar{
+				width: 100px;
+				height: 100px;
+				position: relative;
+				border-radius: 50%;
+                background-size: contain;
+				background-image: url("https://previews.123rf.com/images/viktorijareut/viktorijareut1610/viktorijareut161000303/67827688-vector-illustration-traditional-chinese-japanese-strategy-board-game-go-game-igo-go-board-and-bowl-y.jpg");
+            }
 
 			.experience{
 				position: relative;
@@ -233,10 +225,7 @@
 				background-size: contain;
 				background-image: url("https://ditplanet.com/wp-content/uploads/2015/03/uploading.png");
 			}
-			.experienceText{
-				font-size:13px;
-				padding-left: 10px;
-			}
+
 			
 			.avatar{
 			width: 100px;
@@ -264,97 +253,118 @@
 			  <p class = "name">Cem Önder </p>
 			  <p class = "title">Software<br> & <br> QA Engineer</p>
 			</div>
-		</div>
-
-
-		<div class="form-group">
-			<div class="row">
-				<div class = "col-md-4">Education
+        </div>
+        
+        <div class ="subfrost">
+			<div class="row" id = mainrow>
+				<div class = "col-md-4" id= "secteducation"> <b>Education</b>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#educationNav">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="navbar-collapse collapse" id="educationNav">
 						<div class="collapsableFrost" id = "educationshadow">
 							<div class="ucsd">
-								<a href="http://www.cogsci.ucsd.edu/undergraduates/major/index.html" id="ucsdAvatar"></a>
-								<p class = "schoolname">University of California, San Diego <br> Major:Cognitive Science <br> B.S. Awarded in 2015 </p>
-							</div>
-							<div class="ucsd">
 									<a href="https://www.pdx.edu/computer-science/master-of-science-in-computer-science" id="psuAvatar"></a>
-								<p class = "schoolname">Portland State University <br> Major:Computer Science<br> Postbacc + MS Awarded in 2020 </p> 
+                                <p class = "headText">Portland State University </p>
+                                <br> 
+                                <p class ="subText"> Program:Computer Science M.S. <br> Start: June 2018<br>Graduation: May,2020 </p>
+                            </div>
+                            <div class="ucsd">
+								<a href="https://www.pdx.edu/computer-science/the-graduate-preparation-track-in-computer-science" id="psuAvatar"></a>
+                                <p class = "headText">Portland State University</p>
+                                <br>
+                                <p class ="subText"> Program:Computer Science Post-Bacc <br> Start: January 2017<br>Graduation: June,2018 </p>
 							</div>
+
+                            <div class="ucsd">
+								<a href="http://www.cogsci.ucsd.edu/undergraduates/major/index.html" id="ucsdAvatar"></a>
+                                <p class = "headText">University of California, San Diego</p>
+                                <br>
+                                <p class = "subText">Program: Cognitive Science B.S. <br> Start: September 2012 <br> Graduation: March, 2015</p>
+							</div>
+
 						</div>
 					</div>
-				</div>
-				<div class = "col-md-4">Projects
+                </div>
+                
+				<div class = "col-md-4" id = "sectproject">Projects
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#projectNav">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="navbar-collapse collapse" id="projectNav">
 						<div class="collapsableFrost" id="projectshadow">
+                            <div class="project">
+								<a href="https://github.com/cemondr/proctorX" id="ASAvatar"></a>
+                                <p class = "headText">ProctorX</p>
+                                <br>
+								<p class = "subText"> Linux Desktop Application to track software usage in order to better analyze productivity patterns  </p>
+							</div>
 							<div class="project">
 								<a href="https://github.com/cemondr/BC19pdxgroup4" id="BC19Avatar"></a>										
-								<p class = "projectText">MIT Battle Code Project (2019)</p>
-								<p class = "projectText1">Participated in the MIT battlecode project. A AI based
+                                <p class = "headText">MIT Battle Code Project (2019)</p>
+                                <br>
+								<p class = "subText">Participated in the MIT battlecode project, an AI based
 									strategy game, where teams of 3 or 4 create their own robots and strategically instruct them
-									to battle with the robots of hundreds of other robot teams. 
+									to battle with the robots of hundreds of other teams. 
 
 									Our group successfully beat the bots of Quarter Finalists.
 								</p>
-							</div>
-							<div class="project">
-								<a href="https://github.com/BaderAlshaya/CS410-AgileTeam6" id="FTPAvatar"></a>
-								<p class = "projectText">FTP Client App (2019)</p>
-								<p class = "projectText1"> FTP client that succesfully & securely transfers files</p>
-							</div>
-							<div class="project">
-								<a href="https://github.com/cemondr/Activity-Monitor-Stats" id="ASAvatar"></a>
-								<p class = "projectText">Activity Monitor App (In Progress)</p>
-								<p class = "projectText1"> An applciation that tracks the use of user chosen software
-								and help user to visualize the activity trends. Currently in Progress 
+                            </div>
+                            <div class="project">
+								<a href="https://github.com/cemondr/gothello-player" id="GothelloAvatar"></a>										
+                                <p class = "headText">Multiplayer Gothello Game </p>
+                                <br>
+								<p class = "subText">
+                                    Created an AI player (for a hybrid game of GO and Othello) that utilizes various state space search algorithms
 								</p>
 							</div>
 							<div class="project">
-								<a href="https://github.com/cemondr/FindMyPet" id="FMPAvatar"></a>
-								<p class = "projectText">Find My Pet App (In Progress)</p>
-								<p class = "projectText1"> A web applciation that uses Google API that lets users post 
-								about missing pets, and also spotted/seen stray/wandering pets. Users are capable of both reporting
-								and searching for a missing pet with the help of Google Maps.
+								<a href="https://github.com/cemondr/traveling-salesman-library" id="FTPAvatar"></a>
+                                <p class = "headText">Traveling Salesman Optimization</p>
+                                <br>
+								<p class = "subText"> Traveling Salesman Optimization Library for Rust programming Language. It allows heuristics such as Hill Climbing, Simulated Annealing 
+                                    and Genetic Algorithms to come up with an optimized alternative solution.
+                                </p>
+							</div>
+							<div class="project">
+								<a href="https://github.com/cemondr/color-detection-with-flask" id="FMPAvatar"></a>
+                                <p class = "headText">Color Picker with Flask</p>
+                                <br>
+								<p class = "subText"> A web applciation implemented with Flask that allows user to upload a picture and detect specific pixel color on that picture as the cursor 
+                                    moves around.
 								</p>
 							</div>
 						</div>
 						
 					</div>
-				</div>
-				<div class = "col-md-4"> Experience
+                </div>
+                
+				<div class = "col-md-4" id = "sectexperience"> Experience
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#experienceNav">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="navbar-collapse collapse" id="experienceNav">
 						<div class="collapsableFrost" id = "experienceshadow">
 							<div class="experience">
-								<a href="https://www.linkedin.com/company/aspenyapizemin" id="AspenAvatar"></a>
-								<p class = "experienceText">Software Testing Intern @ Aspen<br>May, 2016 - December, 2016 </p>
-								<p class = "experienceText">I tested basic Python code at a Digital Architecture Company </p>
-							</div>
-							<div class="experience">
 									<a href="https://www.linkedin.com/company/zerochaos" id="ZCAvatar"></a>
-									<p class = "experienceText">Advertisement Quality Tester @ZeroChaos<br> June,2015-May,2016 </p>
-									<p class = "experienceText"> I tested, evaluated and rated the quality of advertisements that Google puts out for users in Turkey, Greece, United States, Italy and France</p>
+                                    <p class = "headText">Advertisement Quality Tester @ZeroChaos<br> June,2015-May,2016 </p>
+                                    <br>
+									<p class = "subText"> I evaluated, rated and provided feedback on relevancy, accuracy and aesthetics of online
+                                        ads, aiming to provide a better user experience.</p>
 							</div>
 							<div class="experience">
 								<a href="http://bci.ucsd.edu/Home.html" id="URAvatar"></a>
-								<p class = "experienceText">Undergraduate Researcher @ UCSD<br> January, 2014- May, 2015 </p>
-								<p class = "experienceText">I have been involved in the data collection and analysis process of several
-										projects that studied the effects of neurofeedback and biofeedback training on
-										children with Autism Spectrum Disorders, supervised by Dr. Jaime Pineda and
-										PhD students. (Named as one of the authors on the poster)
+                                <p class = "headText">Undergraduate Researcher @ UCSD<br> January, 2014- May, 2015 </p>
+                                <br>
+								<p class = "subText">I obtained, primed and analyzed data (with MATLAB) for a series of projects that studied the effects of neurofeedback and biofeedback training on children with Autism Spectrum Disorders
 									</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>	
-		</div>	
+            </div>	
+        </div>
+
+
 	</body>
 </html>
